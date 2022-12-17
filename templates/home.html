@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <link rel="icon" href="data:,"> -->
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medical Diagnosis Diabetes Detection</title>
+        <style>
+            input[type=number], select {
+            width: 20%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            body, html {
+              height: 100%;
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            .bg-image {
+              /* The image used */
+              background-image: url("https://www.knowledgenile.com/wp-content/uploads/2022/02/medical-technology-icon-set-health-wellness.jpg");
+              
+              /* Add the blur effect */
+              filter: blur(2px);
+              -webkit-filter: blur(2px);
+              
+              /* Full height */
+              height: 100vh; 
+              
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;   
+            }
+            
+            /* Position text in the middle of the page/image */
+            .bg-text {
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+              color: white;
+              font-weight: bold;
+              border: 3px solid #f1f1f1;
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+              width: 80%;
+              padding: 20px;
+              text-align: center;
+            }
+            </style>
+    </head>
+
+    <body TEXT = "WHITE";>
+        <div class="bg-image"></div>
+        <div class="bg-text">
+        <h1> Medical Diagnosis - Diabetes Detection </h1>
+        
+        <form method="POST", action="{{url_for('home')}}">
+
+           <b> Glucose (mg/dL):  <input type="number", name='Glucose', 
+            min="1" max="200", step="any", required> 
+            <p> <i>* Fill Values Between 1 to 200 </i></p>
+            
+            Blood Pressure (mmHg):  <input type="number", name='BloodPressure', 
+            min="1" max="200", step="any", required> 
+            <p> <i>* Fill Values Between 1 to 200 </i></p>
+            
+            Skin Thickness (mm) :  <input type="number", name='SkinThickness', 
+            min="1" max="80", step="any", required> 
+            <p> <i>* Fill Values Between 1 to 80 </i></p>
+
+            Insulin (mu U/ml) :  <input type="number", name='Insulin', 
+            min="1" max="850",step="any", required> 
+            <p> <i>* Fill Values Between 1 to 850 </i></p>
+
+            BMI (kg/m2):  <input type="number", name='BMI', 
+            min="1" max="80",step="any", required> 
+            <p> <i>* Fill Values Between 1 to 80 </i></p>
+
+            Diabetes Pedigree Function :  <input type="number", name='DiabetesPedigreeFunction', 
+            min="0" max="3.5", step="any", required> 
+            <p> <i>* Fill Values Between 0 to 3.5 </i></p>
+
+            Age (yrs):  <input type="number", name='Age', 
+            min="1" max="120",step="any", required> <br>
+            <p> <i>* Fill Values Between 1 to 120 </i></p>
+
+            <input type="submit" , value='Predict!' >
+        </form>
+        <br>
+
+        <p style = "font-size: small;">© Monica Gosavi.</p>   
+    </center>
+
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <link rel="icon" href="data:,"> -->
+        <!-- <link rel="shortcut icon" href="#" /> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            input[type=number], select {
+            width: 20%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            body, html {
+              height: 100%;
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            .bg-image {
+              /* The image used */
+              background-image: url("https://www.knowledgenile.com/wp-content/uploads/2022/02/medical-technology-icon-set-health-wellness.jpg");
+              
+              /* Add the blur effect */
+              filter: blur(2px);
+              -webkit-filter: blur(2px);
+              
+              /* Full height */
+              height: 100%; 
+              
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;   
+            }
+            
+            /* Position text in the middle of the page/image */
+            .bg-text {
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+              color: white;
+              font-weight: bold;
+              border: 3px solid #f1f1f1;
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+              width: 80%;
+              padding: 20px;
+              text-align: center;
+            }
+            </style> -->
+    </head>
+
+    <body TEXT = "WHITE";>
+        <div class="bg-image"></div>
+        <div class="bg-text">
+    
+ <center>
+
+
+       <h1> Medical Diagnosis - Diabetes Detection </h1>
+
+        
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        {%if data == 0%}
+        <h1> <b>Diabetes Not Detected </b> </h1><br>  
+    
+    
+
+        {%else%}
+        <h1>  <b>Diabetes Detected </i> </b><br>
+   
+    
+        {%endif%}
+        
+        <br>
+        <br>
+        <br>
+
+        <a href='/' "font-size: small;">go back to home page</a>
+    <br>
+    <br>
+      <p style = "font-size: small;">© Monica Gosavi.</p>   
+      
+
+</body>
+
+</html> 
+
+
+
+
+
+
