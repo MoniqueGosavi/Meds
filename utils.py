@@ -50,10 +50,10 @@ class Diabetes:
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
 
 
-    dbs = Diabetes()
+    #dbs = Diabetes()
 
 
